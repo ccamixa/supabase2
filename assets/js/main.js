@@ -79,3 +79,25 @@ buttons.forEach((button, index) => {
     }
 })
 
+let modal = document.getElementById("modal")
+
+function showModal(){
+    modal.style.display="flex"
+}
+
+function hideModal(){
+    modal.style.display="none"
+}
+
+
+let modall = document.getElementById("modall")
+
+function showModall(){
+    modall.style.display="flex"
+}
+
+function hideModall(){
+    modall.style.display="none"
+}
+   
+   

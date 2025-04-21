@@ -17,7 +17,7 @@
         <div class="header">
             <img src="assets/media/logo/logo.png" alt="">
             <nav>
-                <div class="one">
+                <div class="two">
                     <p>Product</p>
                     <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">›</button>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="one">
+                <div class="two">
                     <p>Product</p>
                     <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">›</button>
@@ -45,8 +45,49 @@
             </nav>
         </div>
         <div class="header_but">
-            <a href="#" class="btn">Start your project</a>
-            <a href="#">Sign in</a>
+            <div class="login"><button class="mbtn" onclick="showModall()">Login</button></div>
+            
+
+            <div class="modal" id="modall" style="display: none;">
+                <div class="modal_content">
+                    <div class="modal_top lol">
+                        <h3>Войти</h3>
+                        <span onclick="hideModall()">x</span>
+                    </div>
+                    
+                    <form action="">
+                        <label for="">Номер телефона</label>
+                        <input type="tel" name="" id="">
+                        <label for="">Пароль</label>
+                        <input type="password" name="" id="">
+                        <button type="submit" class="btn">Войти</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <button class="mbtn btn" onclick="showModal()">Sign up</button>
+
+            <div class="modal" id="modal" style="display: none;">
+                <div class="modal_content">
+                    <div class="modal_top">
+                        <h3>Регистрация</h3>
+                        <span onclick="hideModal()">x</span>
+                    </div>
+                    
+                    <form action="">
+                        <label for="">Имя</label>
+                        <input type="text">
+                        <label for="">Фамилия</label>
+                        <input type="text">
+                        <label for="">Номер телефона</label>
+                        <input type="tel" name="" id="">
+                        <label for="">Пароль</label>
+                        <input type="password" name="" id="">
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
     </header>
     <!-- header -->

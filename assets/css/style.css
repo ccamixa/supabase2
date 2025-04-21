@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    transition: 0.8s;
+    transition: 0.7s;
     font-family: 'Roboto';
 }
 
@@ -57,11 +57,100 @@ nav a {
     color: #fff;
 }
 
+.header_but button {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
 .header_but {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    position: fixed;
+}
+
+span{
+    cursor: pointer;
+    color: #fff;
+    font-size: 32px;
+}
+
+.modal_content{
+    padding: 10px 40px 40px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: #24B47E;
+}
+
+.modal h3{
+    font-size: 32px;
+    margin: 0px 105px;
+}
+
+.modal_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lol h3{
+    margin: 0px 155px;
+}
+
+.modal form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+input{
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #E0E0E0;
+}
+
+label{
+    color: #E0E0E0;
+    font-size: 16px;
+}
+
+.modal .btn{
+    border: 1px solid #E0E0E0;
+    margin-top: 10px;
+}
+
+.login button{
+    border: none;
+    background: none;
+}
+
+.login button:hover{
+    border: none;
+    background: none;
+    color: #24B47E;
+}
+
+.modal .btn:hover{
+    color: #24B47E;
+    border: 1px solid #E0E0E0;
+    background-color: #E0E0E0; 
 }
 
 .header {
@@ -71,14 +160,15 @@ nav a {
     gap: 30px;
 }
 
-.one {
+.two {
     display: flex;
     align-items: center;
     gap: 2px;
 }
 
-.one p {
+.two p {
     color: white;
+    cursor: pointer;
 }
 
 .dropbtn {
@@ -135,8 +225,15 @@ hr {
     color: #fff;
     background-color: #24B47E;
     padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #24B47E;
 }
 
+.btn:hover{
+    color: #24B47E;
+    border: 1px solid #24B47E;
+    background-color: #1F1F1F; 
+}
 /* header*/
 
 /* banner*/
